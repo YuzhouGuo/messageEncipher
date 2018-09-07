@@ -22,7 +22,6 @@ public class Message {
      * makeValid modifies message to remove any character that is not a letter and turn Upper Case into Lower Case
     */
     public void makeValid(){
-        // INSERT YOUR CODE HERE  
          String valid = this.message.replaceAll("[^a-zA-Z]", ""); //if the element is not in this range, delete it
          this.message = valid.toLowerCase();
          lengthOfMessage = this.message.length();
@@ -48,10 +47,8 @@ public class Message {
 
    /**
     * caesarCipher implements the Caesar cipher : it shifts all letter by the number 'key' given as a parameter.
-    * @param key
     */
     public void caesarCipher(int key){
-        // INSERT YOUR CODE HERE  
         String s = "";
   
         for (int i=0;i<message.length();i++)
@@ -68,13 +65,11 @@ public class Message {
  
    /**
     * caesarAnalysis breaks the Caesar cipher
-    * you will implement the following algorithm :
     * - compute how often each letter appear in the message
     * - compute a shift (key) such that the letter that happens the most was originally an 'e'
-    * - decipher the message using the key you have just computed
+    * - decipher the message using the key just computed
     */
-    public void caesarAnalysis(){
-        // INSERT YOUR CODE HERE  
+    public void caesarAnalysis(){ 
         int arrayLength = 0;
         for (int i=97; i<123; i++)
         {
@@ -132,10 +127,8 @@ public class Message {
  
  /**
   * vigenereCipher implements the Vigenere Cipher : it shifts all letter from message by the corresponding shift in the 'key'
-  * @param key
   */
-    public void vigenereCipher (int[] key){
-        // INSERT YOUR CODE HERE  
+    public void vigenereCipher (int[] key){ 
         String s = "";
   
         for (int i=0;i<message.length();i++)
@@ -148,11 +141,9 @@ public class Message {
 
    /**
     * vigenereDecipher deciphers the message given the 'key' according to the Vigenere Cipher
-    * @param key
     */
     
     public void vigenereDecipher (int[] key){
-        // INSERT YOUR CODE HERE  
         String s = "";
   
         for (int i=0;i<message.length();i++)
@@ -165,10 +156,8 @@ public class Message {
  
    /**
     * transpositionCipher performs the transition cipher on the message by reorganizing the letters and eventually adding characters
-    * @param key
     */
     public void transpositionCipher (int key){
-        // INSERT YOUR CODE HERE
         int column = key; 
         int row = (lengthOfMessage/column)+1;
         
@@ -185,10 +174,8 @@ public class Message {
  
    /**
     * transpositionDecipher deciphers the message given the 'key'  according to the transition cipher.
-    * @param key
     */
     public void transpositionDecipher (int key){
-        // INSERT YOUR CODE HERE
         int column = key; 
         int row = (lengthOfMessage/column)+1;
         
