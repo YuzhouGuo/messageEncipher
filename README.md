@@ -5,4 +5,3 @@
  * The "Message.java" file is the source code.
  * The file named "Tester.java" works as a checker, which explains one more time what is the mathematical logic behind these encryptions and what is expected to output.
 
-The pdf file "A1" gives a instruction of this assignment from algorithm course.
